@@ -1,7 +1,96 @@
-h1 {
-    color: red;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+      
+      .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 250px 600px 150px;
+        grid-template-areas: 
+        "hd hd"
+        "main main" 
+        "sd sd"
+        "ft ft";
+        border: 2px solid black;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-h2 {
-    color: blue;
-}
+      .header {
+        grid-area: hd;
+        background: #b1a4a4;
+      }
+
+      #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+      }
+
+      .navbar {
+          background: #565656;
+          margin: 16px 16px 0 16px;
+          padding: 8px;
+          text-align: center;
+          font-family: "open-sans", arial;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar li {
+          display: inline;
+      }
+
+      .navbar a {
+          text-decoration: none;
+          color: #fff;
+
+      }
+      .sidebar {
+        grid-area: sd;
+        background: #82a78c;
+      }
+    
+      .content {
+        grid-area: main;
+        background: #c2a7c3;
+      }
+    
+      .footer {
+        grid-area: ft;
+        background: grey;
+        height: 150px;
+      }
+  
+  @media (min-width: 900px) and (max-width: 1148px) {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px 150px;
+        grid-template-areas: 
+        "hd hd hd hd hd"
+        "sd main main main main"
+        "ft ft ft ft ft";
+        margin-top: 50px;
+    }
+  }
+
+@media (min-width:1149px) {
+    .container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px 150px;
+        grid-template-areas: 
+        "hd hd hd hd hd"
+        "sd main main main main"
+        "ft ft ft ft ft";
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+  }
