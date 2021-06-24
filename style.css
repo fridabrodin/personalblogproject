@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
      body{
-       font-family: "open-sans", arial
+       font-family: "open-sans", arial;
+       color: #565656;
      }
 
      .container {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 250px 600px 150px;
+        grid-template-rows: 250px 800px 150px;
         grid-template-areas: 
         "hd hd"
         "main main" 
@@ -61,31 +63,54 @@
         grid-area: sd;
         background: #82a78c;
       }
+
+      #about {
+        margin: 16px;
+        text-align: center;
+        background: #fff;
+        padding: 16px;
+      }
     
       .content {
         grid-area: main;
         background: #c2a7c3;
-        display: flex;
-        flex-direction: column;
+        margin-top: 32px;
       }
 
-      .post {
-        width: auto;
-        height: auto;
-        border-bottom: 1px solid rgba(0,0,0,0.06);
-        display: inline-block;
-        padding: 16px;
+      .posts {
+        display:flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        border: 2px solid yellow;
       }
+
+    .post {
+          width: auto;
+          height: auto;
+          border: 1px solid red;
+          margin: 16px;
+          display: inline-block;
+      }
+
 
       .post img {
-        max-width: 300px;
+        width: 100%;
+        max-width: 250px;
         height: auto;
       }
 
       .post-title {
         font-family: "Staatliches", arial;
+        font-weight: 600;
+        font-size: 25px;
+        display: inline-block;
       }
 
+      .post-excerpt {
+        display: inline-block;
+
+      }
 
       .button{
         background: #565656;
@@ -109,12 +134,16 @@
         width: 100%;
         display: grid;
         grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 250px 600px 150px;
+        grid-template-rows: 250px 800px 150px;
         grid-template-areas: 
         "hd hd hd hd hd"
         "sd main main main main"
         "ft ft ft ft ft";
         margin-top: 50px;
+    }
+
+    .content {
+      margin-top: 0px;
     }
   }
 
@@ -123,7 +152,7 @@
         width: 80%;
         display: grid;
         grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 250px 600px 150px;
+        grid-template-rows: 250px 800px 150px;
         grid-template-areas: 
         "hd hd hd hd hd"
         "sd main main main main"
@@ -131,5 +160,9 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
+    }
+
+    .content {
+      margin-top: 0px;
     }
   }
