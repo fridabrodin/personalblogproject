@@ -4,20 +4,21 @@
      body{
        font-family: "open-sans", arial;
        color: #565656;
+       background: #ebebeb;
      }
 
      .container {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 250px 350px 800px 64px;
+        grid-template-rows: 250px 210px 2350px 64px;
         grid-template-areas: 
         "hd hd"
         "sd sd"
         "main main" 
         "ft ft";
-        border: 2px solid black;
         margin-left: auto;
         margin-right: auto;
+        background: #fff;
       }
 
       .header {
@@ -61,10 +62,11 @@
 
       .sidebar {
         grid-area: sd;
+        margin: 13px 0px 0px 0px;
       }
 
       #about {
-        margin: 16px;
+        margin: 0px 16px 0px 16px;
         text-align: center;
         background: #e1e1e1;
         padding: 16px;
@@ -72,7 +74,6 @@
     
       .content {
         grid-area: main;
-        margin-top: 32px;
       }
 
       .posts {
@@ -82,7 +83,7 @@
         justify-content: left;
       }
 
-    .post {
+      .post {
           width: auto;
           height: auto;
           margin: 16px;
@@ -122,7 +123,15 @@
         grid-area: ft;
         background: #565656;
         text-align: center;
-        padding: 16px;
+        padding: 16px 0px 40px 0px;
+        margin: 0px 16px 16px 16px;
+      }
+
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
       }
 
       .copyright {
@@ -138,16 +147,12 @@
         width: 100%;
         display: grid;
         grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 250px 800px 64px;
+        grid-template-rows: 250px 1300px 64px;
         grid-template-areas: 
         "hd hd hd hd hd"
         "sd main main main main"
         "ft ft ft ft ft";
         margin-top: 50px;
-    }
-
-    .content {
-      margin-top: 0px;
     }
 
     .post img {
@@ -170,10 +175,6 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
-    }
-
-    .content {
-      margin-top: 0px;
     }
 
     .post {
