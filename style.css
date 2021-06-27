@@ -9,11 +9,11 @@
      .container {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 250px 800px 150px;
+        grid-template-rows: 250px 300px 800px 150px;
         grid-template-areas: 
         "hd hd"
-        "main main" 
         "sd sd"
+        "main main" 
         "ft ft";
         border: 2px solid black;
         margin-left: auto;
