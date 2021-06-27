@@ -9,7 +9,7 @@
      .container {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 250px 300px 800px 150px;
+        grid-template-rows: 250px 350px 800px 64px;
         grid-template-areas: 
         "hd hd"
         "sd sd"
@@ -61,19 +61,17 @@
 
       .sidebar {
         grid-area: sd;
-        background: #82a78c;
       }
 
       #about {
         margin: 16px;
         text-align: center;
-        background: #fff;
+        background: #e1e1e1;
         padding: 16px;
       }
     
       .content {
         grid-area: main;
-        background: #c2a7c3;
         margin-top: 32px;
       }
 
@@ -82,51 +80,57 @@
         flex-direction: column;
         align-items: left;
         justify-content: left;
-        border: 2px solid yellow;
       }
 
     .post {
           width: auto;
           height: auto;
-          border: 1px solid red;
           margin: 16px;
-          display: inline-block;
       }
-
 
       .post img {
         width: 100%;
-        max-width: 250px;
         height: auto;
+      }
+
+      .preview {
+        padding: 8px 8px 8px 16px;
       }
 
       .post-title {
         font-family: "Staatliches", arial;
         font-weight: 600;
         font-size: 25px;
-        display: inline-block;
       }
 
       .post-excerpt {
-        display: inline-block;
-
+        display: block;
+        margin-top: 8px;
       }
 
-      .button{
+      .button {
         background: #565656;
         color: #fff;
         padding: 11px 30px;
-        border-radius: 35px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 16px;
+        border-radius: 25px;
+        text-decoration: none;
         display: inline-block;
+        margin-top: 16px;
       }
     
       .footer {
         grid-area: ft;
-        background: grey;
-        height: 150px;
+        background: #565656;
+        text-align: center;
+        padding: 16px;
+      }
+
+      .copyright {
+        color: #fff;
+        font-family: "Staatliches", arial;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 20px;
       }
   
   @media (min-width: 900px) and (max-width: 1148px) {
@@ -134,7 +138,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 250px 800px 150px;
+        grid-template-rows: 250px 800px 64px;
         grid-template-areas: 
         "hd hd hd hd hd"
         "sd main main main main"
@@ -144,6 +148,12 @@
 
     .content {
       margin-top: 0px;
+    }
+
+    .post img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
     }
   }
 
@@ -152,7 +162,7 @@
         width: 80%;
         display: grid;
         grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 250px 800px 150px;
+        grid-template-rows: 250px 800px 64px;
         grid-template-areas: 
         "hd hd hd hd hd"
         "sd main main main main"
@@ -165,4 +175,16 @@
     .content {
       margin-top: 0px;
     }
+
+    .post {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .post img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+    }
+
   }
