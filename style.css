@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-     body{
+     body {
        font-family: "open-sans", arial;
        color: #565656;
        background: #ebebeb;
@@ -122,7 +122,7 @@
         grid-area: ft;
         background: #565656;
         text-align: center;
-        padding: 16px 0px 40px 0px;
+        padding: 16px 0px 16px 0px;
       }
 
       .pagination a {
