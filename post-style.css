@@ -5,10 +5,10 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 220px 470px 2350px 64px;
-  grid-template-areas: 
+  grid-template-areas:
   "hd hd"
   "sd sd"
-  "main main" 
+  "main main"
   "ft ft";
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +28,7 @@
 
 
 .archive {
-  padding: 8px 16px 16px 16px;
+  padding: 8px 32px 32px 32px;
   background: #e1e1e1;
   margin: 16px 16px 0px 16px;
 }
@@ -44,7 +44,7 @@
   color: #565656;
   line-height: 30px;
 }
- 
+
 
 .content {
   grid-area: main;
@@ -59,6 +59,7 @@
 .blog-post {
   padding: 0px 32px 0px 32px;
 }
+
 
 .blog-post img {
   margin-top: 16px;
@@ -92,6 +93,7 @@
   font-style: italic;
 }
 
+
 .bio {
   margin-top: 12px;
 }
@@ -102,10 +104,12 @@
   height: auto;
 }
 
+
 .share-post {
   text-align: center;
   margin-top: 32px;
 }
+
 
 .fa {
   padding: 15px;
@@ -141,7 +145,7 @@
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 200px 1300px 64px;
-    grid-template-areas: 
+    grid-template-areas:
     "hd hd hd hd hd"
     "sd main main main main"
     "ft ft ft ft ft";
@@ -183,7 +187,7 @@
    display: grid;
    grid-template-columns: 300px 300px 300px;
    grid-template-rows: 200px 1400px 64px;
-   grid-template-areas: 
+   grid-template-areas:
    "hd hd hd hd hd"
    "sd main main main main"
    "ft ft ft ft ft";
