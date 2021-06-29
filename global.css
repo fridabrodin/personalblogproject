@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body {
+    font-family: "open-sans", arial;
+    color: #565656;
+    background: #ebebeb;
+}
+
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    width: 150px;
+}
+
+.navbar {
+    background: #565656;
+    padding: 16px;
+    text-align: center;
+    font-family: "Staatliches", arial;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+  
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+  
+.navbar li {
+    display: inline;
+}
+  
+  
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 12px 0px 12px;
+}
+
+
+.footer {
+    grid-area: ft;
+    background: #565656;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.copyright {
+    color: #fff;
+    font-family: "Staatliches", arial;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+}
