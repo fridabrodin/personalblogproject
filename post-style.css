@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
+
 .container {
   display: grid;
   grid-template-columns: auto;
@@ -43,6 +44,7 @@
   text-decoration: none;
   color: #565656;
   line-height: 30px;
+  font-style: normal;
 }
 
 
@@ -83,7 +85,7 @@
 }
 
 
-.card {
+.author-info {
   padding: 16px;
   text-align: center;
 }
@@ -91,6 +93,11 @@
 
 .title {
   font-style: italic;
+}
+
+
+.email {
+  text-decoration: underline;
 }
 
 
@@ -120,6 +127,7 @@
   border-radius: 50%;
   margin: 8px;
 }
+
 
 .fa-twitter {
   background: #55ACEE;
@@ -175,7 +183,7 @@
   }
 
 
- .card {
+ .author-info {
    text-align: left;
   }
 }
@@ -225,7 +233,7 @@
  }
 
 
- .card {
+ .author-info {
    text-align: left;
   }
 }

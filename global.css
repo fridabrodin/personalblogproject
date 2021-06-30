@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import 'style.css';
+@import 'post-style.css';
+@import 'typography.css';
+
 
 body {
-    font-family: "open-sans", arial;
+    font-family: "open sans", arial;
     color: #565656;
     background: #ebebeb;
 }
@@ -20,7 +24,7 @@ body {
     background: #565656;
     padding: 16px;
     text-align: center;
-    font-family: "Staatliches", arial;
+    font-family: "staatliches", arial;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 20px;
@@ -43,6 +47,7 @@ ul {
     text-decoration: none;
     color: #fff;
     padding: 0px 12px 0px 12px;
+    font-style: normal;
 }
 
 
@@ -55,7 +60,7 @@ ul {
 
 .copyright {
     color: #fff;
-    font-family: "Staatliches", arial;
+    font-family: "staatliches", arial;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 20px;
