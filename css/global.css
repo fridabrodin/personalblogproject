@@ -50,8 +50,17 @@ ul {
     font-style: normal;
 }
 
+figure {
+    margin: 0px;
+}
 
-.footer {
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+
+footer {
     grid-area: ft;
     background: #565656;
     text-align: center;
