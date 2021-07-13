@@ -4,8 +4,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 220px 470px 2350px 64px;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(200px,auto) minmax(300px, auto) minmax(900px, auto) 64px;
   grid-template-areas:
   "hd hd"
   "sd sd"
@@ -31,7 +31,7 @@
 .archive {
   padding: 8px 32px 32px 32px;
   background: #e1e1e1;
-  margin: 16px 16px 0px 16px;
+  margin: 0px 16px 0px 16px;
 }
 
 
@@ -50,6 +50,7 @@
 
 .content {
   grid-area: main;
+  margin-bottom: 16px;
 }
 
 
@@ -151,8 +152,8 @@
  .container {
     width: 100%;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 200px 1300px 64px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 220px minmax(900px, auto) 64px;
     grid-template-areas:
     "hd hd hd hd hd"
     "sd main main main main"
@@ -193,8 +194,8 @@
  .container {
    width: 80%;
    display: grid;
-   grid-template-columns: 300px 300px 300px;
-   grid-template-rows: 200px 1400px 64px;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 220px minmax(700px, auto) 64px;
    grid-template-areas:
    "hd hd hd hd hd"
    "sd main main main main"

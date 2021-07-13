@@ -5,7 +5,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 7fr 64px;
+  grid-template-rows: minmax(200px, auto) minmax(150px, auto) 7fr 64px;
   grid-template-areas:
   "hd hd"
   "sd sd"
@@ -24,12 +24,12 @@
 
 .sidebar {
   grid-area: sd;
-  margin: 13px 0px 0px 0px;
+  margin: 16px 0px 0px 0px;
 }
 
 
 #about {
-  margin: 16px 16px 0px 16px;
+  margin: 0px 16px 0px 16px;
   text-align: center;
   background: #e1e1e1;
   padding: 8px 32px 32px 32px;
@@ -38,6 +38,7 @@
 
 .content {
   grid-area: main;
+  margin-bottom: 16px;
 }
 
 
@@ -46,7 +47,6 @@
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  padding-top: 16px;
 }
 
 
@@ -85,22 +85,51 @@
   font-style: normal;
 }
 
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-style: normal;
+.pagination {
+  margin: 8px 0;
 }
-
+.pagination li {
+  float: left;
+}
+.pagination ul {
+  margin: 32px 0 32px 0;
+  float: left;
+  left: 50%;
+  position: relative;
+  list-style: none;
+}
+.pagination ul > li {
+  left: -50%;
+  position: relative;
+}
+.pagination li a {
+  background-color: #e1e1e1;
+  border-radius: 5px 5px 5px 5px;
+  color: #000;
+  display: block;
+  font-family: "open sans", arial;
+  font-size: 12px;
+  line-height: 30px;
+  font-style: normal;
+  height: 30px;
+  margin: 0 3px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 30px;
+}
+.pagination li a:hover {
+  background-color: #565656;
+  color: #FFFFFF;
+}
 
 @media (min-width: 900px) and (max-width: 1148px) {
   .container {
     width: 100%;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 220px 1300px 64px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 220px minmax(900px, auto) 64px;
     grid-template-areas:
     "hd hd hd hd hd"
     "sd main main main main"
@@ -122,7 +151,7 @@
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 220px 800px 64px;
+    grid-template-rows: 220px minmax(700px, auto) 64px;
     grid-template-areas:
     "hd hd hd hd hd"
     "sd main main main main"
@@ -141,7 +170,7 @@
 
   .post-card img {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
   }
 }
